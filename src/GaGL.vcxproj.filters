@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{5954de49-7e8e-4e5c-9319-55713a23d177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\include">
+      <UniqueIdentifier>{3a3c6f88-55ee-4ffc-8231-4828df9f54d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\src">
+      <UniqueIdentifier>{3aa19ea5-4aed-4e00-8c50-6fc8b434a1ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render">
+      <UniqueIdentifier>{bc163f1b-0ad8-4348-97d7-6e8348a54754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render\include">
+      <UniqueIdentifier>{447c0426-67c3-4954-b5a6-feac6f49024d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Render\src">
+      <UniqueIdentifier>{d60d9111-d2d8-4cc1-b468-17ba5e8cce63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Common">
+      <UniqueIdentifier>{d7c377cf-7cca-4658-8fb4-2789fa69fd30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RenderEngine\Common\CommonMath.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\RenderObjMgr.h">
+      <Filter>Engine\Render\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\RenderObject.h">
+      <Filter>Engine\Render\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\RenderQueue.h">
+      <Filter>Engine\Render\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\CgManager.h">
+      <Filter>Engine\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\EngineDef.h">
+      <Filter>Engine\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\EngineHead.h">
+      <Filter>Engine\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\RenderEngine.h">
+      <Filter>Engine\include</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\common.h">
+      <Filter>Engine\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RenderEngine\CgManager.cpp">
+      <Filter>Engine\src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RenderEngine\RenderEngine.cpp">
+      <Filter>Engine\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\RenderObject.cpp">
+      <Filter>Engine\Render\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\RenderQueue.cpp">
+      <Filter>Engine\Render\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\Common\CommonMath.cpp">
+      <Filter>Engine\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\RenderObjMgr.cpp">
+      <Filter>Engine\Render\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
