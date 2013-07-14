@@ -5,6 +5,9 @@
 #include <iostream>
 #include <stdio.h>
 #include <sstream>
+#include <string>
+#include "Common/CommonMath.h"
+
 
 //core
 #include <GL\glew.h>
@@ -17,7 +20,6 @@
 #include <CG\cgGL.h>
 
 //STL
-#include <string>
 #include <map>
 #include <vector>
 
