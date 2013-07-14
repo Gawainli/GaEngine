@@ -26,8 +26,8 @@ public:
 	std::string GetName() const;
 protected:
 private:
-	unsigned int hashmain;
-	unsigned int hashsub;
+	unsigned int hash;
+	unsigned int hashCheck;
 	std::string name;
 };
 
