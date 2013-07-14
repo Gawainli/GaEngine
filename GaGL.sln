@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GaGL", "src\GaGL.vcxproj", "{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "GaEngineModelingProject", "GaEngineModelingProject\GaEngineModelingProject.modelproj", "{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Debug|Win32.Build.0 = Debug|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Release|Win32.ActiveCfg = Release|Win32
+		{235290D8-A8E8-4BD8-BE64-9CE4586FACCB}.Release|Win32.Build.0 = Release|Win32
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6B0F4A05-F3AF-459A-99CB-066C541CCA3D}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
