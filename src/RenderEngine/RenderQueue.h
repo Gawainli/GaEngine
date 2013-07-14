@@ -3,7 +3,7 @@
 
 #include "common.h"
 #include "EngineDef.h"
-#include "RenderObject.hpp"
+#include "RenderObject.h"
 
 
 ENGINE_NS_BEGIN
@@ -18,7 +18,6 @@ public:
 
 
 public://render obj operation
-	void AddRenderObj(  );
 	void RemoveRenderObj( const char* strName );
 	void RemoveRenderObj( unsigned long id );
 	void RemoveAllObjs();
