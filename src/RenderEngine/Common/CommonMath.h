@@ -4,8 +4,6 @@
 #include "..\common.h"
 #include "..\EngineDef.h"
 
-ENGINE_NS_BEGIN
-
 class CommonMath
 {
 public:
@@ -40,6 +38,4 @@ protected:
 private:
 };
 
-
-ENGINE_NS_END
 #endif // CommonMath_h__
