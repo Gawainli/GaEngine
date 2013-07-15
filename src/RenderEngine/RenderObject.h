@@ -21,13 +21,9 @@ public:
 
 
 public:
-	unsigned int GetHash() const;
-	unsigned int GetHashCheck() const;
 	std::string GetName() const;
 protected:
 private:
-	unsigned int hash;
-	unsigned int hashCheck;
 	std::string name;
 };
 
