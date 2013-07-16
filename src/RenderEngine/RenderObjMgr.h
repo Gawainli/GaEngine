@@ -4,6 +4,7 @@
 #include "common.h"
 #include "EngineDef.h"
 #include "RenderObject.h"
+#include "Common/GaContainer.h"
 
 #define RENDER_OBJ_PUCKET_SIZE 65537
 
@@ -25,22 +26,16 @@ public:
 
 public:
 	void AddRenderObj( RenderObject& obj );
+
+	int GetRenderObjIdx( const std::string& name );
 	
-	RenderObject& GetRenderObj( const std::string& name );
+	RenderObject& GetRenderObj( int idx );
 
 
 public:
-	inline static unsigned int Str2Idx( const std::string& name )
-	{
-		return CommonMath::BKDRHash( name ) % RENDER_OBJ_PUCKET_SIZE;
-	}
 
-	inline static unsigned int Str2Check( const std::string& name )
-	{
-		return CommonMath::APHash( name );
-	}
 private:
-	RenderObject* objPucket[RENDER_OBJ_PUCKET_SIZE];
+	GaHashTable<RenderObject*> objs;
 
 
 private:

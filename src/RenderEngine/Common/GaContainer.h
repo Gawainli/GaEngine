@@ -33,15 +33,16 @@ public:
 	int Insert( const std::string& strkey, T& value )
 	{
 		unsigned int hash = CommonMath::BKDRHash( strkey );
+		unsigned int check = CommonMath::APHash( strkey );
 		unsigned int idx = hash % TABLE_SIZE;
 
-		while ( elements[idx].hash != 0 )
+		while ( elements[idx].hash != 0 && elements[idx].check != check )
 		{
 			idx++;
 		}
 		elements[idx].hash = hash;
 		elements[idx].check = CommonMath::APHash( strkey );
-		elements[idx] = value;
+		elements[idx].value = value;
 		return idx;
 	}
 
@@ -65,12 +66,13 @@ public:
 
 	T& operator [] ( unsigned int idx ) const
 	{
+		assert( idx<TABLE_SIZE );
 		return elements[idx].value;
 	}
 public:
 
 private:
-	GaHashTable<T> elements[TABLE_SIZE];
+	GaHashObj<T> elements[TABLE_SIZE];
 };
 
 

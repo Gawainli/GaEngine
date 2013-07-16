@@ -5,7 +5,6 @@ GaEngineNs::RenderObjMgr* GaEngineNs::RenderObjMgr::pIntance = NULL;
 
 GaEngineNs::RenderObjMgr::RenderObjMgr()
 {
-	memset( objPucket, 0, sizeof(RenderObject*)*RENDER_OBJ_PUCKET_SIZE );
 }
 
 GaEngineNs::RenderObjMgr::~RenderObjMgr()
@@ -15,21 +14,18 @@ GaEngineNs::RenderObjMgr::~RenderObjMgr()
 
 void GaEngineNs::RenderObjMgr::AddRenderObj( RenderObject& obj )
 {
-	unsigned int index = Str2Idx(obj.GetName());
-	while( NULL != objPucket[index])
-	{
-		index++;
-	}
-	objPucket[index] = &obj;
+	RenderObject* p = &obj;
+	objs.Insert( obj.GetName(), p );
 }
 
-RenderObject& GaEngineNs::RenderObjMgr::GetRenderObj( const std::string& name )
+RenderObject& GaEngineNs::RenderObjMgr::GetRenderObj( int idx )
 {
-	unsigned int index = Str2Idx(name);
-	
-	while ( objPucket[index]->GetHashCheck() != Str2Check(name) )
-	{
-		index++;
-	}
-	return *objPucket[index];
+	assert(objs[idx]);
+	return *objs[idx];
 }
+
+int GaEngineNs::RenderObjMgr::GetRenderObjIdx( const std::string& name )
+{
+	return objs.GetIdx( name );
+}
+
