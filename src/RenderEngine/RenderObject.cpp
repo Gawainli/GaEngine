@@ -13,7 +13,6 @@ GaEngineNs::RenderObject::RenderObject( const std::string& name )
 
 GaEngineNs::RenderObject::~RenderObject()
 {
-
 }
 
 std::string GaEngineNs::RenderObject::GetName() const

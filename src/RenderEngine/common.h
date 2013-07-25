@@ -22,7 +22,10 @@
 //STL
 #include <map>
 #include <vector>
+#include <hash_map>
 
+using namespace stdext;
+using namespace std;
 
 #endif // common_h__
 

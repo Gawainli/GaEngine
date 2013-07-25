@@ -4,10 +4,9 @@
 #include "common.h"
 #include "EngineDef.h"
 #include "RenderObject.h"
-#include "Common/GaContainer.h"
 
 #define RENDER_OBJ_PUCKET_SIZE 65537
-
+typedef hash_map< string, RenderObject*> RenderObjMap;
 ENGINE_NS_BEGIN
 
 class RenderObjMgr
@@ -27,15 +26,13 @@ public:
 public:
 	void AddRenderObj( RenderObject& obj );
 
-	int GetRenderObjIdx( const std::string& name );
+	RenderObject* GetRenderObj( const std::string& name );
 	
-	RenderObject& GetRenderObj( int idx );
-
 
 public:
 
 private:
-	GaHashTable<RenderObject*> objs;
+	RenderObjMap objs;
 
 
 private:

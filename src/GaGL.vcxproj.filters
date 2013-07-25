@@ -51,9 +51,6 @@
     <ClInclude Include="RenderEngine\common.h">
       <Filter>Engine\include</Filter>
     </ClInclude>
-    <ClInclude Include="RenderEngine\Common\GaContainer.h">
-      <Filter>Engine\Common</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RenderEngine\CgManager.cpp">
@@ -74,9 +71,6 @@
     </ClCompile>
     <ClCompile Include="RenderEngine\RenderObjMgr.cpp">
       <Filter>Engine\Render\src</Filter>
-    </ClCompile>
-    <ClCompile Include="RenderEngine\Common\GaContainer.cpp">
-      <Filter>Engine\Common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

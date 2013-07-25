@@ -85,7 +85,6 @@
     <ClInclude Include="RenderEngine\CgManager.h" />
     <ClInclude Include="RenderEngine\common.h" />
     <ClInclude Include="RenderEngine\Common\CommonMath.h" />
-    <ClInclude Include="RenderEngine\Common\GaContainer.h" />
     <ClInclude Include="RenderEngine\EngineDef.h" />
     <ClInclude Include="RenderEngine\EngineHead.h" />
     <ClInclude Include="RenderEngine\RenderEngine.h" />
@@ -97,7 +96,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RenderEngine\CgManager.cpp" />
     <ClCompile Include="RenderEngine\Common\CommonMath.cpp" />
-    <ClCompile Include="RenderEngine\Common\GaContainer.cpp" />
     <ClCompile Include="RenderEngine\RenderEngine.cpp" />
     <ClCompile Include="RenderEngine\RenderObject.cpp" />
     <ClCompile Include="RenderEngine\RenderObjMgr.cpp" />

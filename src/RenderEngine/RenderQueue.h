@@ -15,7 +15,7 @@ public:
 	virtual ~RenderQueue();
 
 	void RenderAllObjs();
-
+	void AddRenderObj( RenderObject& obj );
 
 public://render obj operation
 	void RemoveRenderObj( const char* strName );
@@ -23,6 +23,7 @@ public://render obj operation
 	void RemoveAllObjs();
 protected:
 private:
+	std::vector<RenderObject*>  renderObjs;
 };
 
 

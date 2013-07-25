@@ -15,17 +15,18 @@ GaEngineNs::RenderObjMgr::~RenderObjMgr()
 void GaEngineNs::RenderObjMgr::AddRenderObj( RenderObject& obj )
 {
 	RenderObject* p = &obj;
-	objs.Insert( obj.GetName(), p );
+	objs.insert( make_pair( obj.GetName(), &obj ) );
 }
 
-RenderObject& GaEngineNs::RenderObjMgr::GetRenderObj( int idx )
+RenderObject* GaEngineNs::RenderObjMgr::GetRenderObj( const std::string& name )
 {
-	assert(objs[idx]);
-	return *objs[idx];
-}
+	RenderObjMap::iterator it = objs.find(name);
 
-int GaEngineNs::RenderObjMgr::GetRenderObjIdx( const std::string& name )
-{
-	return objs.GetIdx( name );
+	if ( it != objs.end() )
+	{
+		return it->second;
+	}
+
+	return NULL;
 }
 
