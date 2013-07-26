@@ -82,9 +82,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CgMaterial.h" />
-    <ClInclude Include="CgMaterialParameter.h" />
     <ClInclude Include="RenderEngine\CgManager.h" />
+    <ClInclude Include="RenderEngine\CgMaterial.h" />
+    <ClInclude Include="RenderEngine\CgMaterialParameter.h" />
+    <ClInclude Include="RenderEngine\CgPass.h" />
+    <ClInclude Include="RenderEngine\CgTechnique.h" />
     <ClInclude Include="RenderEngine\common.h" />
     <ClInclude Include="RenderEngine\Common\CommonMath.h" />
     <ClInclude Include="RenderEngine\EngineDef.h" />
@@ -95,10 +97,12 @@
     <ClInclude Include="RenderEngine\RenderQueue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CgMaterial.cpp" />
-    <ClCompile Include="CgMaterialParameter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RenderEngine\CgManager.cpp" />
+    <ClCompile Include="RenderEngine\CgMaterial.cpp" />
+    <ClCompile Include="RenderEngine\CgMaterialParameter.cpp" />
+    <ClCompile Include="RenderEngine\CgPass.cpp" />
+    <ClCompile Include="RenderEngine\CgTechnique.cpp" />
     <ClCompile Include="RenderEngine\Common\CommonMath.cpp" />
     <ClCompile Include="RenderEngine\RenderEngine.cpp" />
     <ClCompile Include="RenderEngine\RenderObject.cpp" />

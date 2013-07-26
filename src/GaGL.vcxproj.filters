@@ -54,10 +54,16 @@
     <ClInclude Include="RenderEngine\CgManager.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
-    <ClInclude Include="CgMaterialParameter.h">
+    <ClInclude Include="RenderEngine\CgMaterialParameter.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
-    <ClInclude Include="CgMaterial.h">
+    <ClInclude Include="RenderEngine\CgMaterial.h">
+      <Filter>Engine\Cg</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\CgTechnique.h">
+      <Filter>Engine\Cg</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\CgPass.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
   </ItemGroup>
@@ -81,10 +87,16 @@
     <ClCompile Include="RenderEngine\CgManager.cpp">
       <Filter>Engine\Cg</Filter>
     </ClCompile>
-    <ClCompile Include="CgMaterial.cpp">
+    <ClCompile Include="RenderEngine\CgMaterial.cpp">
       <Filter>Engine\Cg</Filter>
     </ClCompile>
-    <ClCompile Include="CgMaterialParameter.cpp">
+    <ClCompile Include="RenderEngine\CgMaterialParameter.cpp">
+      <Filter>Engine\Cg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CgPass.cpp">
+      <Filter>Engine\Cg</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CgTechnique.cpp">
       <Filter>Engine\Cg</Filter>
     </ClCompile>
   </ItemGroup>
