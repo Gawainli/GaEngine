@@ -82,7 +82,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CgMarerial.h" />
+    <ClInclude Include="CgMaterial.h" />
     <ClInclude Include="CgMaterialParameter.h" />
     <ClInclude Include="RenderEngine\CgManager.h" />
     <ClInclude Include="RenderEngine\common.h" />

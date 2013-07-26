@@ -54,10 +54,10 @@
     <ClInclude Include="RenderEngine\CgManager.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
-    <ClInclude Include="CgMarerial.h">
+    <ClInclude Include="CgMaterialParameter.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
-    <ClInclude Include="CgMaterialParameter.h">
+    <ClInclude Include="CgMaterial.h">
       <Filter>Engine\Cg</Filter>
     </ClInclude>
   </ItemGroup>

@@ -22,6 +22,7 @@ public:
 
 private:
 	CGcontext cgContext;
+	bool isInitSucceed;
 private:
 	static CgManager* pInstance;
 };

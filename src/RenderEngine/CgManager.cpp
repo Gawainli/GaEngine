@@ -35,7 +35,7 @@ bool GaEngineNs::CgManager::InitCgGL()
 
 	cgGLRegisterStates( cgContext );
 	cgGLSetManageTextureParameters( cgContext , CG_TRUE );
-
+	isInitSucceed = true;
 	return true;
 }
 
