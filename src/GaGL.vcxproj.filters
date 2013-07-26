@@ -22,6 +22,9 @@
     <Filter Include="Engine\Common">
       <UniqueIdentifier>{d7c377cf-7cca-4658-8fb4-2789fa69fd30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\Cg">
+      <UniqueIdentifier>{4e792fb8-469a-45fb-b2cb-ec5e30b24bbc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RenderEngine\Common\CommonMath.h">
@@ -36,9 +39,6 @@
     <ClInclude Include="RenderEngine\RenderQueue.h">
       <Filter>Engine\Render\include</Filter>
     </ClInclude>
-    <ClInclude Include="RenderEngine\CgManager.h">
-      <Filter>Engine\include</Filter>
-    </ClInclude>
     <ClInclude Include="RenderEngine\EngineDef.h">
       <Filter>Engine\include</Filter>
     </ClInclude>
@@ -51,11 +51,17 @@
     <ClInclude Include="RenderEngine\common.h">
       <Filter>Engine\include</Filter>
     </ClInclude>
+    <ClInclude Include="RenderEngine\CgManager.h">
+      <Filter>Engine\Cg</Filter>
+    </ClInclude>
+    <ClInclude Include="CgMarerial.h">
+      <Filter>Engine\Cg</Filter>
+    </ClInclude>
+    <ClInclude Include="CgMaterialParameter.h">
+      <Filter>Engine\Cg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RenderEngine\CgManager.cpp">
-      <Filter>Engine\src</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RenderEngine\RenderEngine.cpp">
       <Filter>Engine\src</Filter>
@@ -71,6 +77,15 @@
     </ClCompile>
     <ClCompile Include="RenderEngine\RenderObjMgr.cpp">
       <Filter>Engine\Render\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\CgManager.cpp">
+      <Filter>Engine\Cg</Filter>
+    </ClCompile>
+    <ClCompile Include="CgMaterial.cpp">
+      <Filter>Engine\Cg</Filter>
+    </ClCompile>
+    <ClCompile Include="CgMaterialParameter.cpp">
+      <Filter>Engine\Cg</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

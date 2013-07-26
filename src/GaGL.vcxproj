@@ -82,6 +82,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CgMarerial.h" />
+    <ClInclude Include="CgMaterialParameter.h" />
     <ClInclude Include="RenderEngine\CgManager.h" />
     <ClInclude Include="RenderEngine\common.h" />
     <ClInclude Include="RenderEngine\Common\CommonMath.h" />
@@ -93,6 +95,8 @@
     <ClInclude Include="RenderEngine\RenderQueue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CgMaterial.cpp" />
+    <ClCompile Include="CgMaterialParameter.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RenderEngine\CgManager.cpp" />
     <ClCompile Include="RenderEngine\Common\CommonMath.cpp" />
